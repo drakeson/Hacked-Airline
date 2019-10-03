@@ -1,0 +1,6 @@
+framework module Pods_Hacked_AirlineTests {
+  umbrella header "Pods-Hacked AirlineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

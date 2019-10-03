@@ -1,0 +1,61 @@
+PODS:
+  - ADDatePicker (1.0.0)
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - ObjectMapper (3.5.1)
+  - PickerButton (0.1.4)
+  - Polyline (4.2.1)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.11.0):
+    - PromiseKit/CorePromise
+  - SPAlert (1.1.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - ADDatePicker
+  - Alamofire
+  - AlamofireImage
+  - ObjectMapper
+  - PickerButton
+  - Polyline (~> 4.0)
+  - PromiseKit
+  - SPAlert
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ADDatePicker
+    - Alamofire
+    - AlamofireImage
+    - ObjectMapper
+    - PickerButton
+    - Polyline
+    - PromiseKit
+    - SPAlert
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ADDatePicker: 62cd9bb25b71b261bbd008020ea9347b84979873
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PickerButton: d92eba033a8cd678ff2e34f69b0ec3d7388e490a
+  Polyline: 0e9890790292741c8186201a536b6bb6a78d02dd
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  SPAlert: 292690a27df49ff131d532a0a39d89b08dd93e4d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 583b9cbf344ddea00187134f1180473190e528c5
+
+COCOAPODS: 1.5.2
