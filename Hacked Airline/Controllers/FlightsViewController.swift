@@ -68,13 +68,13 @@ class FlightsViewController: UIViewController, UITableViewDelegate, UITableViewD
             let swiftyJsonVar = JSON(response.result.value!)
             
             print(swiftyJsonVar)
-//            let scheduleJson = swiftyJsonVar["ScheduleResource"]["Schedule"]
-//            
-//            let departFrom = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["AirportCode"].string
-//            let arriveTo = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["AirportCode"].string
-//            let departTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["ScheduledTimeLocal"]["DateTime"].string
-//            let arriveTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["ScheduledTimeLocal"]["DateTime"].string
-//            
+            let scheduleJson = swiftyJsonVar["ScheduleResource"]["Schedule"]
+
+            let departFrom = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["AirportCode"].string
+            let arriveTo = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["AirportCode"].string
+            let departTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["ScheduledTimeLocal"]["DateTime"].string
+            let arriveTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["ScheduledTimeLocal"]["DateTime"].string
+
 //            for i in 0..<scheduleJson.count{
 //                //adding hero values to the hero list
 //                self.flight.append(Flights(
