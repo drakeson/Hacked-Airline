@@ -13,7 +13,7 @@ class APIManager {
 
     class func headers() -> HTTPHeaders {
         var headers: HTTPHeaders = [
-            "Authorization": "Bearer e3m9nwnzymkkv5r59qdvqbjz",
+            "Authorization": "Bearer wtt97ns3szckd8pacvbgv2as",
             "Accept": "application/json",
             "X-Originating-IP": "64.190.114.174"
         ]

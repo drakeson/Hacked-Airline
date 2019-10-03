@@ -66,22 +66,24 @@ class FlightsViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         Alamofire.request(AppsUrls.flightsData + url,method: .get, headers:APIManager.headers()).responseJSON { response in
             let swiftyJsonVar = JSON(response.result.value!)
-            let scheduleJson = swiftyJsonVar["ScheduleResource"]["Schedule"]
             
-            let departFrom = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["AirportCode"].string
-            let arriveTo = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["AirportCode"].string
-            let departTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["ScheduledTimeLocal"]["DateTime"].string
-            let arriveTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["ScheduledTimeLocal"]["DateTime"].string
-            
-            for i in 0..<scheduleJson.count{
-                //adding hero values to the hero list
-                self.flight.append(Flights(
-                    fromAir: (scheduleJson[i] as AnyObject).value(forAttribute: departFrom!) as? String,
-                    fromTym: (scheduleJson[i] as AnyObject).value(forKey: arriveTo!) as? String,
-                    toAir: (scheduleJson[i] as AnyObject).value(forKey: departTym!) as? String,
-                    toTym: (scheduleJson[i] as AnyObject).value(forKey: arriveTym!) as? String
-                ))
-            }
+            print(swiftyJsonVar)
+//            let scheduleJson = swiftyJsonVar["ScheduleResource"]["Schedule"]
+//            
+//            let departFrom = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["AirportCode"].string
+//            let arriveTo = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["AirportCode"].string
+//            let departTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Departure"]["ScheduledTimeLocal"]["DateTime"].string
+//            let arriveTym = swiftyJsonVar["ScheduleResource"]["Schedule"]["Flight"]["Arrival"]["ScheduledTimeLocal"]["DateTime"].string
+//            
+//            for i in 0..<scheduleJson.count{
+//                //adding hero values to the hero list
+//                self.flight.append(Flights(
+//                    fromAir: (scheduleJson[i] as AnyObject).value(forAttribute: departFrom!) as? String,
+//                    fromTym: (scheduleJson[i] as AnyObject).value(forKey: arriveTo!) as? String,
+//                    toAir: (scheduleJson[i] as AnyObject).value(forKey: departTym!) as? String,
+//                    toTym: (scheduleJson[i] as AnyObject).value(forKey: arriveTym!) as? String
+//                ))
+//            }
             self.flightTable.reloadData()
             
             
